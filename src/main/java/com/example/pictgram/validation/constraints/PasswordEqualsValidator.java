@@ -1,12 +1,14 @@
 package com.example.pictgram.validation.constraints;
 
+import java.util.Objects;
+
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 import org.springframework.beans.BeanWrapper;
 import org.springframework.beans.BeanWrapperImpl;
 
-public class PasswordEqualsValidator implements ConstraintValidator<PasswordEquals, object> {
+public class PasswordEqualsValidator implements ConstraintValidator<PasswordEquals, Object> {
 	private String field1;
 	private String field2;
 	private String message;
